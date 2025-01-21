@@ -21,6 +21,7 @@ function MobileNavbar() {
   const { isSignedIn } = useAuth();
   const { theme, setTheme } = useTheme();
 
+
   return (
     <div className="flex md:hidden items-center space-x-2">
       <Button
@@ -74,7 +75,7 @@ function MobileNavbar() {
                 </SignOutButton>
               </>
             ) : (
-              <SignInButton mode="modal">
+              <SignInButton>
                 <Button variant="default" className="w-full">
                   Sign In
                 </Button>

@@ -16,7 +16,6 @@ async function Sidebar() {
     if (!user) return null
 
 
-    console.log({ user })
 
     return (
         <div className="sticky top-20">
@@ -95,7 +94,7 @@ const UnAuthenticatedSidebar = () => (
                         Login
                     </Button>
                 </SignInButton>
-                <SignUpButton mode="modal">
+                <SignUpButton>
                     <Button className="w-full mt-2" variant="default">
                         Sign Up
                     </Button>
